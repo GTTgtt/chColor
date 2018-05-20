@@ -1,0 +1,70 @@
+nav {
+    position: absolute;
+    top 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(var(--clr1), 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-list {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(var(--clr3), 1);
+}
+
+#main-list .ml-1 {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: 20px;
+}
+
+#main-list .ml-1 div {
+    width: 100%;
+    height: 1px;
+    overflow: hidden;
+}
+
+#main-list .ml-1 div:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(var(--clr2), 1);
+    transition: left 0.2s linear;
+}
+
+#main-list .ml-1:hover div:after {
+    left: 0;
+}
+
+#main-list .ml-1:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+#main-list .submenu {
+    opacity: 0;
+    background-color: rgba(var(--clr1), 1);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    visibility: hidden;
+    transition: opacity 0.1s linear;
+}
+
+#main-list .submenu li {
+    padding: 5px 15px;
+    transition: background-color 0.15s linear;
+}
+
+#main-list .submenu li:hover {
+    color: rgba(var(--clr1), 1);
+    background-color: rgba(var(--clr2), 1);
+}
