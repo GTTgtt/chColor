@@ -51,3 +51,16 @@ function changeColors(){
 function changeColor(num, col){
     document.documentElement.style.setProperty('--clr' + num, parseInt(col.substr(1, 2), 16) + ', ' + parseInt(col.substr(3, 2), 16) + ', ' + parseInt(col.substr(5, 2), 16));
 }
+
+function changeFont(){
+    if(document.querySelector('input[type="text"]').value){
+        document.head.innerHTML += document.querySelector('input[type="text"]').value;
+        
+        document.documentElement.style.setProperty('--fnt1',  ('*' + document.querySelector('input[type="text"]').value.split('=')[2].split('"')[0].split('+').join(' ') + '*').split('*').join('\''));
+        
+        ('').replaceAll
+        
+        console.log('font: ' + getComputedStyle(document.body).getPropertyValue('--fnt1'));
+    }
+    //console.log(document.querySelector('input[type="text"]').value.split('=')[1].split('"')[0]);
+}

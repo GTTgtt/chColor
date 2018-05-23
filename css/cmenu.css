@@ -19,6 +19,10 @@
     margin: 0 5px;
 }
 
+#colors-menu input[type="text"]{
+    padding: 5px 10px;
+}
+
 #ch-color {
     margin-top: 10px;
     color: black;

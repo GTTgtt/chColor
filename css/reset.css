@@ -5,6 +5,7 @@
     list-style: none;
     outline: none;
     position: relative;
+    font-family: var(--fnt1);
 }
 
 html, body {
