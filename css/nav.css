@@ -65,6 +65,6 @@ nav {
 }
 
 #main-list .submenu li:hover {
-    color: rgba(var(--clr1), 1);
+/*    color: rgba(var(--clr1), 1);*/
     background-color: rgba(var(--clr2), 1);
 }

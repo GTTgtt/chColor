@@ -5,14 +5,38 @@
         
         <link rel="stylesheet" href="css/variables.css" type="text/css" />
         <link rel="stylesheet" href="css/reset.css" type="text/css" />
+        <link rel="stylesheet" href="css/cmenu.css" type="text/css" />
         <link rel="stylesheet" href="css/nav.css" type="text/css" />
         
         <script src="js/code.js"></script>
         
         <title>Stranica</title>
     </head>
-    <body onload="changeColor()">
-        <button id="ch-color" onclick="changeColor()">Change color</button>
+    <body onload="init()">
+        <div id="colors-menu">
+            <div class="clr">
+                <input type="checkbox" />
+                <input type="color" /> Color 1
+            </div>
+            <div class="clr">
+                <input type="checkbox" />
+                <input type="color" /> Color 2
+            </div>
+            <div class="clr">
+                <input type="checkbox" />
+                <input type="color" /> Color 3
+            </div>
+            <div class="clr">
+                <input type="checkbox" />
+                <input type="color" /> Color 4
+            </div>
+            <div class="clr">
+                <input type="checkbox" />
+                <input type="color" /> Color 5
+            </div>
+            <button id="ch-color" onclick="changeColors()">Change color</button>
+        </div>
+        
         <nav>
             <div id="menu">
                 <ul id="main-list">
